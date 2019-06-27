@@ -1,0 +1,111 @@
+
+/****************Common Button Styles************************/
+.bt
+  padding: 4px 20px
+  font-size: 14px
+  margin: 10px 0
+  border: 0
+  text-transform: capitalize
+  text-align: center
+  cursor: pointer
+
+.bt:hover, .bt:active, .bt:focus, .bt:visited
+  text-decoration: none
+
+button
+  cursor: pointer
+
+/**************Button with images************************/
+.img-btn
+  display: block
+  min-width: 58px
+  border: 0.93px solid $primary_col
+  opacity: 0.75
+  border-radius: 3px
+  padding: 7px 3px
+  background-color: $white
+  box-shadow: inset -2px -2px 3px 0 #ACACAC, 0 2px 3px 0 rgba(0,0,0,0.5)
+  text-align: center
+  img
+    width: auto
+    height: 20px
+    object-fit: contain
+    margin: auto
+  span
+    color: #004C89
+    font-size: 9.62px
+    letter-spacing: -0.34px
+    line-height: 10px
+
+/****************Button width images active state************************/
+.img-btn.active
+  border: 0.93px solid $primary_col
+  background-color: #A7DDFF
+  box-shadow: inset -2px -2px 3px 0 #72B5D7, 0 2px 3px 0 rgba(0,0,0,0.5)
+
+/****************Small image button************************/
+.tiny-img-btn
+  border: 0.5px solid $primary_col
+  border-radius: 3px
+  background: linear-gradient(141.36deg, #F5FAFC 0%, #E9F6F9 29.3%, #C7EAFF 66.46%, #DAF1FF 100%)
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.25)
+  opacity: 0.57
+  width: 19px
+  height: 20px
+  img
+    width: auto
+    height: 8px
+    object-fit: contain
+    margin-top: -11px
+    text-align: center
+
+/****************Flowmate buttons************************/
+.bt-primary
+  background: linear-gradient(180deg, #EDFAFF 0%, #E1F5FE 53.62%, #C9EAFD 68.23%, #BEE5FC 100%)
+  border-radius: 2px
+  border: $border
+  color: #56859B
+  cursor: pointer
+
+.btn-cancel
+  background: linear-gradient(180deg, #FDFDFD 0%, #F3F2F2 46.72%, #E8E6E6 58.89%, #D6D6D6 100%)
+
+.right-arrow
+  border: $border
+  background: linear-gradient(141.36deg, #F5FAFC 0%, #E9F6F9 29.3%, #C7EAFF 66.46%, #DAF1FF 100%)
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.25)
+  border-radius: 3px
+  padding: 0px 7px
+  img
+    width: 9px
+    margin-top: -3px
+
+
+.add-btn
+  width: 30px
+  height: 30px
+  display: block
+  border: $border
+  border-radius: 3px
+  background: linear-gradient(180deg, #EBA5AB 0%, #934752 100%)
+  box-shadow: inset -2px -2px 3px 0 rgba(97,97,97,0.39), 0 2px 50px 0 rgba(0,0,0,0.47)
+  text-align: center
+  img
+    width: 14px
+    height: auto
+    object-fit: contain
+
+.delete-btn
+  width: 30px
+  height: 30px
+  display: block
+  border: $border
+  border-radius: 3px
+  background: linear-gradient(180deg, #F4F4F4 0%, #E6E6E6 100%)
+  box-shadow: inset -2px -2px 3px 0 rgba(97,97,97,0.39), 0 2px 50px 0 rgba(0,0,0,0.47)
+  text-align: center
+  cursor: pointer
+  img
+    width: 11px
+    height: auto
+    object-fit: contain

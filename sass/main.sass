@@ -1,0 +1,173 @@
+@import _font
+@import _color
+@import _theme
+@import _layout
+@import _button
+@import _panel
+@import _table
+@import _tree
+@import _frame
+@import _form
+@import _table-frame
+@import _page
+@import _modal
+@import _flowchart
+@import _media
+
+body
+  background: linear-gradient(178.71deg, #B0DBF6 0%, #BDE1F6 100%)
+
+a:hover
+  text-decoration: none
+a
+  color: $black
+
+p
+  font-size: 14px
+
+.tree-frame
+  .treeView
+    padding: 10px
+    position: relative
+  .search-box
+    margin: 8px
+  .frame-header
+    position: absolute
+  .right-arrow
+    margin: 8px 0
+
+#contextMenu
+  position: absolute
+  display: none
+  background-color: $grey
+  border: 1px solid rgba(86,133,155,0.66)
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.21)
+  border-radius: 3px
+  z-index: 9
+.r-menu
+  list-style: none
+  li:last-child
+    border-color: transparent
+  li
+    border-bottom: 1px solid $white
+    position: relative
+    img
+      position: absolute
+      width: 20px
+      left: 10px
+      top: 8px
+    a
+      display: block
+      padding: 5px 64px 5px 48px
+      font-family: $primary_font
+      color: $txt_grey
+      font-size: 14px
+      text-transform: capitalize
+    a:hover, a:visited, a:focus
+      color: $txt_grey
+
+.li-bg
+  display: none
+  width: 100%
+  height: 25px
+  top: 0
+  border-top: $border
+  border-bottom: $border
+  position: absolute
+  box-shadow: inset -1px -1px 2px 0 $white
+  background: linear-gradient(180deg, #F5FAFC 0%, #E9F6F9 40.79%, #C7EAFF 73.06%, #DAF1FF 100%)
+
+.right-sub-menu
+  display: none
+  position: absolute
+  left: 100%
+  background-color: $grey
+  border: 1px solid rgba(86,133,155,0.66)
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.21)
+  border-radius: 3px
+  list-style: none
+  padding-left: 0
+  width: 176px
+  z-index: 9
+  li
+    a
+      padding: 5px 36px 5px 46px
+
+.has-submenu::after
+  content: ""
+  background-image: url('../images/arrow.png')
+  background-repeat: no-repeat
+  position: absolute
+  right: 4px
+  top: 10px
+  width: 13px
+  height: 17px
+  background-size: 11px auto
+  display: inline-block
+  z-index: 9
+
+.profile-area
+  float: right
+  margin-top: 14px
+  margin-right: 16px
+
+.page-header
+  .profile-img
+    width: 40px
+    height: 40px
+    float: left
+
+.page-header
+  ul.dropdown-menu
+    top: 12px !important
+    left: -132px
+    padding: 10px 20px
+    li
+      display: block
+      a
+        font-size: 14px
+      a:hover, a:visited, a:active
+        color: $black
+
+.dropdown
+  display: inline-block
+  float: left
+  cursor: pointer
+  button
+    background: transparent
+    border: 0
+    cursor: pointer
+
+.dropdown-toggle::after
+  margin-top: 18px
+
+//Tab inside modal
+.modal-tab.nav-tabs
+  border-bottom: 0
+  a.active
+    background: linear-gradient(180deg, #F5FAFC 0%, #E9F6F9 40.79%, #C7EAFF 73.06%, #DAF1FF 100%)
+  li
+    display: inline-block
+    a
+      display: block
+      padding: 4px 10px
+      font-size: 12px
+      margin-right: -5px
+      border: 0.5px solid $primary_col
+      border-left: 0
+      background: linear-gradient(180deg, #FDFDFD 0%, #F3F2F2 46.72%, #E8E6E6 58.89%, #D6D6D6 100%)
+      color: $primary_col
+      // box-shadow: inset -2px -2px 1px 0 rgba(255,255,255,0.39), 0 2px 50px 0 rgba(0,0,0,0.47)
+      // border-radius: 2px 0 0 2px
+    a:hover, a:focus, a:visited
+      color: $primary_col
+  li:first-child
+    a
+      border-left: 0.5px solid $primary_col
+
+.prev-icon1
+  width: 10px
+  margin-left: 15px
+.next-icon1
+  width: 10px
+  margin-left: 20px

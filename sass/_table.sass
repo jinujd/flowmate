@@ -1,0 +1,99 @@
+/**************Table Styles************************/
+table
+  border-bottom: $border
+  th
+    background: linear-gradient(180deg, #F4F4F4 0%, #E6E6E6 100%)
+    border-right: $border
+    border-top: $border
+    border-bottom: $border
+    font-size: 10px
+    text-align: left
+    padding: 8px
+    padding-left: 13px
+    font-family: $primary_font
+  th:first-child
+    width: 37px !important
+  th:last-child
+    border-right: 0 !important
+  tr
+    td
+      text-align: center
+      font-size: 12px
+      border-bottom: 0.5px solid rgba(86,133,155,0.66)
+      box-shadow: inset -1px -1px 2px 0 $white
+  td:first-child, th:first-child
+    background: linear-gradient(90deg, #F5F5F5 0%, #F4F4F4 0%, #DCDADA 100%)
+    padding: 6px 3px
+  tr:nth-child(2n)
+    background: #F8F8F8
+  td:first-child
+    border-right: 0.5px solid rgba(86,133,155,0.66)
+  th.active
+    background: linear-gradient(180deg, #F5FAFC 0%, #E9F6F9 40.79%, #C7EAFF 73.06%, #DAF1FF 100%)
+
+table.dataTable thead .sorting::before, table.dataTable thead .sorting_asc::before, table.dataTable thead .sorting_desc::before,
+table.dataTable thead .sorting_asc_disabled::before, table.dataTable thead .sorting_desc_disabled::before
+  content: "\f078" !important
+  font-family: FontAwesome
+  right: 6px !important
+  font-size: 11px
+  top: 7px
+
+
+table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after
+  content: "\f077" !important
+  font-family: FontAwesome
+  font-size: 11px
+  top: 7px
+
+.sorting::before
+  opacity: 1 !important
+
+.sorting::after
+  opacity: 0 !important
+
+.sorting_desc::before
+  opacity: 0 !important
+
+.sorting_asc::after
+  opacity: 0 !important
+
+.tab-table
+  width: 100%
+  .btn-add
+    img
+      width: 12px
+      float: right
+      margin-right: 10px
+  .styled-checkbox + label
+    position: absolute
+    left: 4px
+    top: 10px
+  .styled-checkbox + label:before
+    width: 10px
+    height: 10px
+    margin-right: 0
+    background: $white
+  .styled-checkbox:checked + label:after
+    top: 4px
+  th
+    background: linear-gradient(180deg, #F4F4F4 0%, #E6E6E6 100%) !important
+    padding: 4px 20px !important
+    border-right: 0.5px solid rgba(86,133,155,0.66)
+    border-top: 0.5px solid rgba(86,133,155,0.66)
+    border-bottom: 0.5px solid rgba(86,133,155,0.66)
+  tr
+    td
+      text-align: left
+      padding-left: 20px
+      position: relative
+      border-bottom: 0
+      input[type=checkbox]
+        position: absolute
+        left: 0
+  th:first-child
+    width: auto !important
+    padding: 6px 13px
+  td:first-child
+    background: transparent

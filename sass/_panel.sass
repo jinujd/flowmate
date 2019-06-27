@@ -1,0 +1,96 @@
+/*--============== Panel Style  ==================*/
+.panel-heading
+  background: linear-gradient(180deg, #F5F5F5 0%, #DCDADA 100%)
+  box-shadow: 0 3px 4px -2px rgba(0,0,0,0.28)
+  border-top: $border
+
+.panel-heading.active
+  border-bottom: $border
+
+.panel-title
+  margin-bottom: 0
+  .dropdown-icon
+    float: right
+    position: relative
+    right: 3px
+    top: 6px
+  a
+    color: $black
+    font-size: 10px
+    font-weight: bold
+    line-height: 10px
+    display: block
+    padding: 10px
+    img.menu-icon
+      margin-right: 5px
+      width: auto
+      height: 20px
+      object-fit: contain
+      float: none
+      position: relative
+      right: auto
+      top: 0
+
+.panel-group:last-child
+  border-bottom: $border
+
+.limenu
+  padding-left: 0
+  margin-bottom: 0
+  li
+    padding: 6px 27px
+    list-style: none
+    margin: 6px
+    border: 1px solid transparent
+    a
+      color: $black
+      font-size: 10px
+      line-height: 10px
+      font-weight: bold
+      display: block
+    img
+      height: 15px
+      width: auto
+      object-fit: contain
+      margin-right: 10px
+  li.active, li:hover
+    background: linear-gradient(180deg, #F5FAFC 0%, #E9F6F9 40.79%, #C7EAFF 73.06%, #DAF1FF 100%)
+    border: 1px solid rgba(86,133,155,0.36)
+    margin-top: 6px
+
+.dropdown-icon
+  transform: rotate(-90deg)
+.rotate
+  transform: rotate(0)
+
+.panel-body
+  background: $white
+  font-size: 14px
+
+/*--============== Panel without image  ==================*/
+.no-image-panel
+  .panel-title
+    .dropdown-icon
+      right: 0px
+      top: 2px
+
+/*--============== Panel inside no image panel (right frame)  ==================*/
+
+.no-image-panel
+  .panel-heading
+    background: linear-gradient(180deg, #EFEFEF 0%, #C8C8C8 100%)
+  .table-panel
+    .panel-title::before
+      content: "\f0d7"
+      font-family: FontAwesome
+      position: absolute
+      left: 8px
+      font-size: 10px
+      top: 7px
+    .panel-title
+      position: relative
+      a
+        padding-left: 20px
+        padding: 7px 10px 7px 20px
+    .panel-heading
+      background: linear-gradient(180deg, #F4F4F4 0%, #f9f8f8 100%)

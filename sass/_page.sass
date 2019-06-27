@@ -1,0 +1,65 @@
+/*-----------------page header styles-----------------*/
+.page-header
+  background: linear-gradient(180deg, #B0DBF6 3%, #84BEEB 43.5%, #9BCBEF 63.99%, #95C6F2 100%)
+  border: $border
+  ul
+    li
+      display: inline-block
+      margin-right: 5px
+
+.page-header-bar
+  width: 100%
+  height: 30px
+  background: linear-gradient(180deg, #CDECFF 0%, #BDE1F6 100%)
+  border-top: $border
+
+
+/*-----------------Tab styles-----------------*/
+.nav
+  display: block
+  margin-bottom: -1px
+
+.tab-content
+  .tree-frame
+    .right-arrow
+      margin: 10px -16px
+
+.right-panel-frame
+  .frame-prim
+    height: 345px
+
+.frame-prim.vheight
+  height: 400px
+  overflow: hidden
+
+.table-dropdown
+  margin-top: 8px
+  border-left: $border
+  border-right: $border
+  background: $white
+  height: 465px
+  border-bottom: $border
+
+.text-editor
+  height: 411px
+  width: 100%
+  margin-top: 8px
+  border: $border
+  background: $white
+  textarea
+    border: 0.5px solid rgba(86,133,155,0.66)
+    width: 100%
+    border: 0
+    box-shadow: inset -1px -1px 2px 0 #FFFFFF
+    border-radius: 0
+    resize: none
+  textarea:nth-child(2n)
+    background: #F8F8F8
+  textarea:focus, textarea:visited, textarea:focus, textarea:active
+    outline: 0
+    box-shadow: none
+    outline-offset: 0
+
+#datatable_wrapper
+  height: 320px
+  overflow: scroll
